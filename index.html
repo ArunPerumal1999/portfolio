@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arun Kumar P | Full-Stack Developer (Laravel, CodeIgniter, React.js)</title>
+  <meta name="description"
+    content="Portfolio of Arun Kumar P, Full-Stack Developer with 2+ years of experience architecting scalable web applications, custom CMS platforms, and RESTful APIs using PHP, Laravel, CodeIgniter 4, React.js, and MySQL." />
+  <meta name="keywords"
+    content="Arun Kumar P, Full-Stack Developer, Laravel, CodeIgniter 4, React.js, Next.js, MySQL, PostgreSQL, RESTful APIs, Web Developer Tamil Nadu, Web Developer Chennai, Villupuram" />
+  <meta name="author" content="Arun Kumar P" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Move to Top Button -->
+  <div class="scroll-button">
+    <a href="#home" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
+  </div>
+
+  <!-- Quick Floating Contact / WhatsApp Widget -->
+  <a href="https://wa.me/919677470849" target="_blank" rel="noopener noreferrer" class="whatsapp-float"
+    aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat with Arun</span>
+  </a>
+
+  <!-- Navigation Menu -->
+  <nav id="navbar">
+    <div class="navbar">
+      <div class="logo">
+        <a href="#home">
+          <span class="logo-bracket">&lt;</span>Arun<span class="logo-dot">.Dev</span><span class="logo-bracket">
+            /&gt;</span>
+        </a>
+      </div>
+      <ul class="menu" id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="mobile-resume-btn">
+          <button class="nav-cv-btn" onclick="openResumeModal()">
+            <i class="fas fa-file-alt"></i> View / Download Resume
+          </button>
+        </li>
+        <li class="mobile-menu-socials">
+          <a href="https://www.linkedin.com/in/arun-kumar-06104821a" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/ArunPerumal1999" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:pgarunperumal1999@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/919677470849" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="tel:+919677470849" title="Call"><i class="fas fa-phone-alt"></i></a>
+        </li>
+        <div class="cancel-btn" id="cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+      </ul>
+
+      <div class="nav-right">
+        <button class="nav-cv-btn desktop-only" onclick="openResumeModal()">
+          <i class="fas fa-file-download"></i> View CV
+        </button>
+        <div class="media-icons desktop-only">
+          <a href="https://www.linkedin.com/in/arun-kumar-06104821a" target="_blank" rel="noopener noreferrer"
+            title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/ArunPerumal1999" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:pgarunperumal1999@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:+919677470849" title="Phone">
+            <i class="fas fa-phone-alt"></i>
+          </a>
+        </div>
+        <div class="menu-btn" id="menu-btn" aria-label="Open Navigation Menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-backdrop" id="navBackdrop"></div>
+
+  <!-- Home / Hero Section -->
+  <section class="home" id="home">
+    <div class="home-backdrop"></div>
+    <div class="home-content">
+      <div class="hero-grid">
+        <div class="text hero-text">
+          <div class="status-pill">
+            <span class="pulse-indicator"></span> Available for Full-Stack Opportunities
+          </div>
+          <div class="text-one">Hello, I'm</div>
+          <h1 class="text-two">ARUN KUMAR P</h1>
+          <div class="text-three">
+            <span class="typing-prefix">I build </span>
+            <span class="typing-text" id="typingText">Scalable Web Platforms</span>
+          </div>
+          <p class="hero-desc">
+            Full-Stack Developer with <strong>2+ years of professional experience</strong> architecting robust web
+            applications,
+            custom CMS platforms, and high-performance RESTful APIs. Specializing in <strong>PHP (Laravel, CodeIgniter
+              4)</strong>,
+            <strong>React.js / Next.js</strong>, and <strong>Secure Payment Gateways</strong>.
+          </p>
+
+          <div class="hero-meta">
+            <span><i class="fas fa-map-marker-alt"></i> Villupuram & Chennai, Tamil Nadu, India</span>
+            <span><i class="fas fa-briefcase"></i> 2+ Years Experience</span>
+          </div>
+
+          <div class="button hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-laptop-code"></i> View Key Projects
+            </a>
+            <button class="btn btn-outline" onclick="openResumeModal()">
+              <i class="fas fa-download"></i> View &amp; Download CV
+            </button>
+            <a href="#contact" class="btn btn-ghost">
+              <i class="fas fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+
+          <div class="hero-tech-badges">
+            <span class="badge-label">Primary Stack:</span>
+            <div class="badges-wrapper">
+              <span class="tech-badge"><i class="fab fa-laravel"></i> Laravel</span>
+              <span class="tech-badge"><i class="fab fa-php"></i> CodeIgniter 4</span>
+              <span class="tech-badge"><i class="fab fa-react"></i> React.js</span>
+              <span class="tech-badge"><i class="fab fa-node-js"></i> Node.js</span>
+              <span class="tech-badge"><i class="fas fa-database"></i> MySQL</span>
+              <span class="tech-badge"><i class="fas fa-credit-card"></i> PhonePe / Razorpay</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-card">
+            <div class="image-wrapper">
+              <img src="Images/arun_profile.jpg" alt="Arun Kumar P - Full-Stack Developer" class="profile-img" />
+              <div class="visual-glow"></div>
+            </div>
+            <div class="floating-badge badge-top-left">
+              <i class="fas fa-code"></i>
+              <div>
+                <strong>Full-Stack MVC</strong>
+                <small>Laravel &amp; CodeIgniter</small>
+              </div>
+            </div>
+            <div class="floating-badge badge-bottom-right">
+              <i class="fas fa-shield-alt"></i>
+              <div>
+                <strong>Payment Gateways</strong>
+                <small>PhonePe &amp; Razorpay</small>
+              </div>
+            </div>
+            <div class="floating-badge badge-bottom-left">
+              <i class="fas fa-bolt"></i>
+              <div>
+                <strong>30% Faster APIs</strong>
+                <small>Optimized DB Queries</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title">
+        <span>About Me</span>
+      </div>
+      <div class="about-details">
+        <div class="left">
+          <div class="about-image-card">
+            <img src="Images/about.png" alt="Arun Kumar P - Developer" />
+            <div class="experience-chip">
+              <span class="exp-number">2+</span>
+              <span class="exp-text">Years of Hands-on<br />Experience</span>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="topic">Architecting Scalable Web Applications &amp; Robust Backends</div>
+          <p>
+            I am a results-driven <strong>Full-Stack Developer</strong> with 2+ years of hands-on professional
+            experience
+            architecting, building, and maintaining scalable web applications, dynamic CMS platforms, and RESTful APIs.
+          </p>
+          <p>
+            Proficient in <strong>PHP (Laravel, CodeIgniter 4)</strong>, modern JavaScript (<strong>React.js, Next.js,
+              ES6+</strong>),
+            and relational databases (<strong>MySQL, PostgreSQL, Redis</strong>). Proven expertise in integrating
+            enterprise payment
+            gateways (<strong>PhonePe, Razorpay</strong>), engineering dynamic administrative dashboards with Role-Based
+            Access
+            Control (RBAC), and implementing responsive, accessible UI/UX designs.
+          </p>
+
+          <!-- Key Metrics / Highlights -->
+          <div class="about-highlights-grid">
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-briefcase"></i></div>
+              <div class="highlight-content">
+                <strong>2+ Years</strong>
+                <span>Full-Stack Experience</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-layer-group"></i></div>
+              <div class="highlight-content">
+                <strong>4+ Key Projects</strong>
+                <span>Production Deployments</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-credit-card"></i></div>
+              <div class="highlight-content">
+                <strong>Payment Integration</strong>
+                <span>PhonePe &amp; Razorpay</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-tachometer-alt"></i></div>
+              <div class="highlight-content">
+                <strong>30% Query Boost</strong>
+                <span>Database Indexing &amp; ORM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Info Cards -->
+          <div class="info-list">
+            <div class="info-col">
+              <div><i class="fas fa-user"></i> <strong>Name:</strong> Arun Kumar P</div>
+              <div><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Villupuram, Tamil Nadu, India</div>
+              <div><i class="fas fa-envelope"></i> <strong>Email:</strong> <a
+                  href="mailto:pgarunperumal1999@gmail.com">pgarunperumal1999@gmail.com</a></div>
+            </div>
+            <div class="info-col">
+              <div><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> <a href="tel:+919677470849">+91
+                  9677470849</a></div>
+              <div><i class="fas fa-graduation-cap"></i> <strong>Education:</strong> B.E. (EEE), Mailam Engg. College
+              </div>
+              <div><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a
+                  href="https://www.linkedin.com/in/arun-kumar-06104821a" target="_blank"
+                  rel="noopener noreferrer">in/arun-kumar-06104821a</a></div>
+            </div>
+          </div>
+
+          <div class="button about-actions">
+            <button class="btn btn-primary" onclick="openResumeModal()">
+              <i class="fas fa-file-pdf"></i> Download Resume
+            </button>
+            <a href="#experience" class="btn btn-outline">
+              <i class="fas fa-arrow-down"></i> View Experience
+            </a>
+            <a href="https://github.com/ArunPerumal1999" target="_blank" rel="noopener noreferrer"
+              class="btn btn-ghost">
+              <i class="fab fa-github"></i> GitHub Profile
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Experience Section -->
+  <section class="experience-section" id="experience">
+    <div class="content">
+      <div class="title">
+        <span>Work Experience</span>
+      </div>
+      <p class="section-subtext">My professional journey in full-stack web architecture and production systems</p>
+
+      <div class="timeline">
+        <!-- Job 1: Gharuda Infotech -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="company-role">
+                <h3>Full Stack Web Developer</h3>
+                <h4 class="company-name"><i class="fas fa-building"></i> Gharuda Infotech Pvt Ltd</h4>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-badge current"><i class="fas fa-calendar-check"></i> April 2024 – Present</span>
+                <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Chennai, India</span>
+              </div>
+            </div>
+
+            <div class="timeline-body">
+              <ul class="experience-points">
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Architected and maintained scalable full-stack web platforms using <strong>CodeIgniter 4
+                      (MVC)</strong>, <strong>Laravel</strong>, and <strong>React.js</strong>.</span>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Developed and consumed secure <strong>RESTful APIs</strong> enabling seamless, real-time
+                    communication between React.js frontend interfaces and backend services.</span>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Integrated enterprise payment solutions including <strong>PhonePe</strong> and
+                    <strong>Razorpay</strong> for e-commerce checkouts and subscription workflows with webhook
+                    verification.</span>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Built dynamic administrative dashboards and CMS modules with <strong>Role-Based Access Control
+                      (RBAC)</strong>, AJAX-based asynchronous form submissions, and FilePond media upload
+                    management.</span>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Hardened application security by enforcing <strong>CSRF token validation</strong>, input
+                    sanitization, secure session handling, and <strong>SQL injection prevention</strong>.</span>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Managed end-to-end deployment pipelines on shared and VPS environments via
+                    <strong>cPanel</strong>, including scheduled database backups and maintenance.</span>
+                </li>
+              </ul>
+
+              <div class="timeline-skills">
+                <span class="skill-pill">CodeIgniter 4</span>
+                <span class="skill-pill">Laravel (MVC)</span>
+                <span class="skill-pill">React.js</span>
+                <span class="skill-pill">MySQL</span>
+                <span class="skill-pill">RESTful APIs</span>
+                <span class="skill-pill">PhonePe Gateway</span>
+                <span class="skill-pill">Razorpay</span>
+                <span class="skill-pill">RBAC</span>
+                <span class="skill-pill">FilePond</span>
+                <span class="skill-pill">cPanel &amp; VPS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 2: Why Global Services -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="company-role">
+                <h3>Full Stack Developer Intern</h3>
+                <h4 class="company-name"><i class="fas fa-building"></i> Why Global Services</h4>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-badge"><i class="fas fa-calendar-alt"></i> August 2023 – February 2024</span>
+                <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Chennai, India</span>
+              </div>
+            </div>
+
+            <div class="timeline-body">
+              <ul class="experience-points">
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Developed responsive full-stack features using the <strong>MERN stack</strong> (MongoDB,
+                    Express.js, React.js, Node.js).</span>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Collaborated in agile sprint cycles, participating in daily standups, code reviews, and Git
+                    version control workflows.</span>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Engineered reusable UI components with React.js and tested backend REST endpoints using
+                    Postman.</span>
+                </li>
+              </ul>
+
+              <div class="timeline-skills">
+                <span class="skill-pill">MERN Stack</span>
+                <span class="skill-pill">MongoDB</span>
+                <span class="skill-pill">Express.js</span>
+                <span class="skill-pill">React.js</span>
+                <span class="skill-pill">Node.js</span>
+                <span class="skill-pill">Git</span>
+                <span class="skill-pill">Agile</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Projects Section -->
+  <section class="projects-section" id="projects">
+    <div class="content">
+      <div class="title">
+        <span>Key Projects</span>
+      </div>
+      <p class="section-subtext">Featured production platforms engineered with modern full-stack architectures</p>
+
+      <!-- Project Filter Buttons -->
+      <div class="project-filter">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="fullstack">Full-Stack (PHP / Laravel / CI4)</button>
+        <button class="filter-btn" data-filter="react">React.js &amp; Node.js</button>
+        <button class="filter-btn" data-filter="payment">Payment Integrations</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        <!-- Project 1: Innorax CMS -->
+        <div class="project-card" data-category="fullstack">
+          <div class="project-slider" data-autoplay="true">
+            <div class="project-slides">
+              <div class="project-slide active" data-type="web">
+                <img src="Images/innorax.png" alt="Innorax CMS — Web Interface" loading="lazy" />
+                <span class="slide-view-tag web-tag"><i class="fas fa-desktop"></i> Web View</span>
+              </div>
+              <div class="project-slide" data-type="admin">
+                <img src="Images/innorax_admin.png" alt="Innorax CMS — Admin Dashboard" loading="lazy" />
+                <span class="slide-view-tag admin-tag"><i class="fas fa-user-shield"></i> Admin View</span>
+              </div>
+            </div>
+            <button class="slider-arrow prev-arrow" aria-label="Previous Image"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-arrow next-arrow" aria-label="Next Image"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-controls">
+              <button class="slider-pill active" data-index="0" title="Web View"><i class="fas fa-globe"></i> Web</button>
+              <button class="slider-pill" data-index="1" title="Admin View"><i class="fas fa-shield-alt"></i> Admin</button>
+            </div>
+            <div class="project-badge">CMS Platform</div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title">Innorax CMS — Dynamic Content Management System</h3>
+              <p class="project-tech-summary"><strong>Stack:</strong> Laravel (MVC), MySQL, Blade / React.js, Bootstrap
+                5, RESTful APIs</p>
+            </div>
+            <p class="project-desc">
+              Engineered a modular Content Management System featuring customizable page layouts, dynamic navigation
+              builders, and slider banner management.
+            </p>
+            <ul class="project-highlights">
+              <li><i class="fas fa-check"></i> Implemented robust Role-Based Access Control (RBAC) middleware for
+                multi-tier admin and editor roles.</li>
+              <li><i class="fas fa-check"></i> Designed media library management system with image optimization and
+                secure server-side file validation via FilePond.</li>
+              <li><i class="fas fa-check"></i> Built optimized Eloquent ORM queries and database indexing, speeding up
+                query response times by 30%.</li>
+            </ul>
+            <div class="project-tags">
+              <span>Laravel</span>
+              <span>MySQL</span>
+              <span>Blade</span>
+              <span>React.js</span>
+              <span>RBAC</span>
+              <span>REST APIs</span>
+            </div>
+            <div class="project-links">
+              <a href="#contact" class="btn-project-action"><i class="fas fa-info-circle"></i> Inquire Project
+                Details</a>
+              <span class="project-status-tag"><i class="fas fa-lock"></i> Enterprise CMS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Boolok Real Estate -->
+        <div class="project-card" data-category="fullstack react">
+          <div class="project-slider" data-autoplay="true">
+            <div class="project-slides">
+              <div class="project-slide active" data-type="web">
+                <img src="Images/boolok.png" alt="Boolok Real Estate — Web Listing Portal" loading="lazy" />
+                <span class="slide-view-tag web-tag"><i class="fas fa-desktop"></i> Web View</span>
+              </div>
+              <div class="project-slide" data-type="admin">
+                <img src="Images/boolok_admin.png" alt="Boolok Real Estate — Admin Dashboard" loading="lazy" />
+                <span class="slide-view-tag admin-tag"><i class="fas fa-user-shield"></i> Admin View</span>
+              </div>
+            </div>
+            <button class="slider-arrow prev-arrow" aria-label="Previous Image"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-arrow next-arrow" aria-label="Next Image"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-controls">
+              <button class="slider-pill active" data-index="0" title="Web View"><i class="fas fa-globe"></i> Web</button>
+              <button class="slider-pill" data-index="1" title="Admin View"><i class="fas fa-shield-alt"></i> Admin</button>
+            </div>
+            <div class="project-badge">Real Estate</div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title">Boolok — Real Estate Listing Platform</h3>
+              <p class="project-tech-summary"><strong>Stack:</strong> React.js, CodeIgniter 4, RESTful APIs, MySQL,
+                Google Maps API</p>
+            </div>
+            <p class="project-desc">
+              Built a modern real estate platform featuring dynamic property search, faceted filtering, and agent
+              inquiry forms.
+            </p>
+            <ul class="project-highlights">
+              <li><i class="fas fa-check"></i> Integrated Google Maps API using latitude/longitude mapping to provide an
+                interactive geospatial property discovery experience.</li>
+              <li><i class="fas fa-check"></i> Decoupled frontend presentation with React.js while servicing data via
+                lightweight CodeIgniter 4 REST endpoints.</li>
+              <li><i class="fas fa-check"></i> Implemented multi-criteria filters for location, budget, property types,
+                and amenities.</li>
+            </ul>
+            <div class="project-tags">
+              <span>React.js</span>
+              <span>CodeIgniter 4</span>
+              <span>Google Maps API</span>
+              <span>RESTful APIs</span>
+              <span>MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#contact" class="btn-project-action"><i class="fas fa-info-circle"></i> Inquire Project
+                Details</a>
+              <span class="project-status-tag"><i class="fas fa-map-marked-alt"></i> Maps Integrated</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: TTS Brothers -->
+        <div class="project-card" data-category="react payment">
+          <div class="project-slider" data-autoplay="true">
+            <div class="project-slides">
+              <div class="project-slide active" data-type="web">
+                <img src="Images/ttsbrothers.png" alt="TTS Brothers E-Commerce — Storefront" loading="lazy" />
+                <span class="slide-view-tag web-tag"><i class="fas fa-desktop"></i> Web View</span>
+              </div>
+              <div class="project-slide" data-type="admin">
+                <img src="Images/ttsbrothers_admin.png" alt="TTS Brothers E-Commerce — Admin Inventory & Orders" loading="lazy" />
+                <span class="slide-view-tag admin-tag"><i class="fas fa-user-shield"></i> Admin View</span>
+              </div>
+            </div>
+            <button class="slider-arrow prev-arrow" aria-label="Previous Image"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-arrow next-arrow" aria-label="Next Image"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-controls">
+              <button class="slider-pill active" data-index="0" title="Web View"><i class="fas fa-globe"></i> Web</button>
+              <button class="slider-pill" data-index="1" title="Admin View"><i class="fas fa-shield-alt"></i> Admin</button>
+            </div>
+            <div class="project-badge">E-Commerce</div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title">TTS Brothers — E-Commerce Web Application</h3>
+              <p class="project-tech-summary"><strong>Stack:</strong> React.js, Node.js, Express.js, RESTful APIs,
+                MySQL, Razorpay Gateway</p>
+            </div>
+            <p class="project-desc">
+              Developed an end-to-end e-commerce web platform featuring dynamic product catalog, intuitive cart
+              management, and real-time order status tracking.
+            </p>
+            <ul class="project-highlights">
+              <li><i class="fas fa-check"></i> Built scalable backend REST APIs using Node.js and Express.js to handle
+                secure checkout and customer transactions.</li>
+              <li><i class="fas fa-check"></i> Implemented Razorpay payment gateway integration with webhook handlers
+                for real-time transaction verification.</li>
+              <li><i class="fas fa-check"></i> Automated order invoices, stock tracking, and multi-stage delivery
+                tracking status bar.</li>
+            </ul>
+            <div class="project-tags">
+              <span>React.js</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>Razorpay</span>
+              <span>MySQL</span>
+              <span>Webhooks</span>
+            </div>
+            <div class="project-links">
+              <a href="#contact" class="btn-project-action"><i class="fas fa-info-circle"></i> Inquire Project
+                Details</a>
+              <span class="project-status-tag"><i class="fas fa-credit-card"></i> Razorpay Verified</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Sai GK Matrimony -->
+        <div class="project-card" data-category="fullstack payment">
+          <div class="project-slider" data-autoplay="true">
+            <div class="project-slides">
+              <div class="project-slide active" data-type="web">
+                <img src="Images/saigk.png" alt="Sai GK Matrimony — Matchmaking Portal" loading="lazy" />
+                <span class="slide-view-tag web-tag"><i class="fas fa-desktop"></i> Web View</span>
+              </div>
+              <div class="project-slide" data-type="admin">
+                <img src="Images/saigk_admin.png" alt="Sai GK Matrimony — Admin Plan Creation & Users" loading="lazy" />
+                <span class="slide-view-tag admin-tag"><i class="fas fa-user-shield"></i> Admin View</span>
+              </div>
+            </div>
+            <button class="slider-arrow prev-arrow" aria-label="Previous Image"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-arrow next-arrow" aria-label="Next Image"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-controls">
+              <button class="slider-pill active" data-index="0" title="Web View"><i class="fas fa-globe"></i> Web</button>
+              <button class="slider-pill" data-index="1" title="Admin View"><i class="fas fa-shield-alt"></i> Admin</button>
+            </div>
+            <div class="project-badge">Matrimony &amp; SaaS</div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title">Sai GK Matrimony — Matchmaking &amp; Subscription Platform</h3>
+              <p class="project-tech-summary"><strong>Stack:</strong> CodeIgniter 4, PhonePe Gateway, MySQL, jQuery,
+                AJAX</p>
+            </div>
+            <p class="project-desc">
+              Delivered user registration, partner profile matching algorithms, and automated subscription tier
+              management.
+            </p>
+            <ul class="project-highlights">
+              <li><i class="fas fa-check"></i> Engineered intelligent partner matching algorithms based on community,
+                horoscope, education, and preferences.</li>
+              <li><i class="fas fa-check"></i> Integrated PhonePe payment gateway for secure transaction processing and
+                subscription tier renewals.</li>
+              <li><i class="fas fa-check"></i> Built fast, responsive profile discovery with AJAX asynchronous
+                pagination and verified profile badges.</li>
+            </ul>
+            <div class="project-tags">
+              <span>CodeIgniter 4</span>
+              <span>PhonePe Gateway</span>
+              <span>MySQL</span>
+              <span>jQuery</span>
+              <span>AJAX</span>
+            </div>
+            <div class="project-links">
+              <a href="#contact" class="btn-project-action"><i class="fas fa-info-circle"></i> Inquire Project
+                Details</a>
+              <span class="project-status-tag"><i class="fas fa-shield-alt"></i> PhonePe Gateway</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section class="skills" id="skills">
+    <div class="content">
+      <div class="title">
+        <span>Technical Skills</span>
+      </div>
+      <p class="section-subtext">Comprehensive skill matrix developed across 2+ years of production engineering</p>
+
+      <div class="skills-overview-grid">
+        <!-- Category 1: Frontend -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fab fa-react"></i></div>
+            <h3>Frontend Development</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="chip"><i class="fab fa-react"></i> React.js</span>
+            <span class="chip"><i class="fas fa-globe"></i> Next.js</span>
+            <span class="chip"><i class="fab fa-js-square"></i> JavaScript (ES6+)</span>
+            <span class="chip"><i class="fas fa-code"></i> TypeScript</span>
+            <span class="chip"><i class="fab fa-html5"></i> HTML5</span>
+            <span class="chip"><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span class="chip"><i class="fab fa-bootstrap"></i> Bootstrap 5</span>
+            <span class="chip"><i class="fas fa-wind"></i> Tailwind CSS</span>
+            <span class="chip"><i class="fas fa-cubes"></i> jQuery</span>
+          </div>
+        </div>
+
+        <!-- Category 2: Backend & Frameworks -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fab fa-laravel"></i></div>
+            <h3>Backend &amp; Frameworks</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="chip"><i class="fab fa-laravel"></i> Laravel (MVC)</span>
+            <span class="chip"><i class="fab fa-php"></i> CodeIgniter 4 (MVC)</span>
+            <span class="chip"><i class="fab fa-php"></i> PHP</span>
+            <span class="chip"><i class="fab fa-node-js"></i> Node.js</span>
+            <span class="chip"><i class="fas fa-server"></i> Express.js</span>
+            <span class="chip"><i class="fas fa-network-wired"></i> RESTful APIs</span>
+            <span class="chip"><i class="fas fa-user-shield"></i> RBAC Security</span>
+          </div>
+        </div>
+
+        <!-- Category 3: Databases & Caching -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fas fa-database"></i></div>
+            <h3>Databases &amp; Caching</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="chip"><i class="fas fa-database"></i> MySQL</span>
+            <span class="chip"><i class="fas fa-database"></i> PostgreSQL</span>
+            <span class="chip"><i class="fas fa-bolt"></i> Redis</span>
+            <span class="chip"><i class="fas fa-search-plus"></i> Query Indexing</span>
+            <span class="chip"><i class="fas fa-project-diagram"></i> Database Modeling</span>
+          </div>
+        </div>
+
+        <!-- Category 4: Integrations & Payments -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fas fa-credit-card"></i></div>
+            <h3>Integrations &amp; Payments</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="chip"><i class="fas fa-shield-alt"></i> PhonePe Payment Gateway</span>
+            <span class="chip"><i class="fas fa-credit-card"></i> Razorpay Payment Gateway</span>
+            <span class="chip"><i class="fas fa-map-marked-alt"></i> Google Maps API</span>
+            <span class="chip"><i class="fas fa-plug"></i> Third-Party REST APIs</span>
+            <span class="chip"><i class="fas fa-exchange-alt"></i> Webhook Verification</span>
+          </div>
+        </div>
+
+        <!-- Category 5: Tools & Deployment -->
+        <div class="skill-category-card full-width-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fas fa-tools"></i></div>
+            <h3>Tools, Deployment &amp; Workflow</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="chip"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="chip"><i class="fab fa-github"></i> GitHub</span>
+            <span class="chip"><i class="fas fa-terminal"></i> Postman</span>
+            <span class="chip"><i class="fas fa-cloud-upload-alt"></i> Vercel</span>
+            <span class="chip"><i class="fas fa-server"></i> cPanel</span>
+            <span class="chip"><i class="fas fa-network-wired"></i> Apache</span>
+            <span class="chip"><i class="fas fa-cloud-upload-alt"></i> FilePond</span>
+            <span class="chip"><i class="fas fa-sync-alt"></i> AJAX</span>
+            <span class="chip"><i class="fas fa-lock"></i> CSRF &amp; SQLi Hardening</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Proficiency Bars -->
+      <div class="proficiency-section">
+        <h3 class="proficiency-title"><i class="fas fa-chart-bar"></i> Core Competency Proficiency</h3>
+        <div class="proficiency-bars">
+          <div class="prof-bar-item">
+            <div class="prof-header">
+              <span>PHP / Laravel &amp; CodeIgniter 4 (MVC)</span>
+              <span>95%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 95%;"></div>
+            </div>
+          </div>
+          <div class="prof-bar-item">
+            <div class="prof-header">
+              <span>RESTful API Development &amp; Architecture</span>
+              <span>92%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 92%;"></div>
+            </div>
+          </div>
+          <div class="prof-bar-item">
+            <div class="prof-header">
+              <span>Modern JavaScript (React.js, Next.js, ES6+)</span>
+              <span>90%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="prof-bar-item">
+            <div class="prof-header">
+              <span>Payment Gateways (PhonePe, Razorpay)</span>
+              <span>92%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 92%;"></div>
+            </div>
+          </div>
+          <div class="prof-bar-item">
+            <div class="prof-header">
+              <span>Relational Databases (MySQL, PostgreSQL, Redis)</span>
+              <span>88%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+          <div class="prof-bar-item">
+            <div class="prof-header">
+              <span>cPanel Deployment, Security Hardening &amp; Git</span>
+              <span>86%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 86%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Services Section -->
+  <section class="services" id="services">
+    <div class="content">
+      <div class="title">
+        <span>My Services</span>
+      </div>
+      <p class="section-subtext">End-to-end full stack development capabilities delivered with enterprise quality</p>
+
+      <div class="boxes">
+        <!-- Service 1 -->
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="topic">Full-Stack Web Development</div>
+          <p>
+            Building end-to-end web applications with Laravel, CodeIgniter 4, React.js, and Node.js. Clean architecture,
+            high performance, and seamless user experiences.
+          </p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <div class="topic">RESTful API Engineering</div>
+          <p>
+            Designing, building, and securing high-throughput REST APIs with token authentication, CSRF protection, rate
+            limiting, and real-time frontend integration.
+          </p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-credit-card"></i>
+          </div>
+          <div class="topic">Payment Gateway Integration</div>
+          <p>
+            Enterprise integration of PhonePe, Razorpay, and third-party gateways with real-time webhook handling,
+            reconciliation, and automated invoice delivery.
+          </p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-columns"></i>
+          </div>
+          <div class="topic">Custom CMS &amp; Dashboards</div>
+          <p>
+            Engineering modular Content Management Systems, dynamic navigation builders, FilePond media uploads, and
+            Role-Based Access Control (RBAC).
+          </p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="topic">Database Architecture &amp; Tuning</div>
+          <p>
+            Designing normalized relational schemas (MySQL, PostgreSQL), implementing Redis caching, and tuning queries
+            to accelerate application response by 30%+.
+          </p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <div class="topic">Deployment &amp; Cloud Maintenance</div>
+          <p>
+            Managing end-to-end deployment pipelines on cPanel, Apache VPS, and Vercel. Scheduled backups, SSL setup,
+            and application security hardening.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Certifications Section -->
+  <section class="education-section" id="education">
+    <div class="content">
+      <div class="title">
+        <span>Education &amp; Certifications</span>
+      </div>
+      <p class="section-subtext">Academic foundation and industry certifications in full-stack engineering</p>
+
+      <div class="edu-grid">
+        <!-- Education Card -->
+        <div class="edu-card">
+          <div class="edu-badge"><i class="fas fa-graduation-cap"></i> Degree</div>
+          <div class="edu-content">
+            <span class="edu-year">Graduated: April 2022</span>
+            <h3>Bachelor of Engineering (B.E.)</h3>
+            <h4>Electrical &amp; Electronics Engineering (EEE)</h4>
+            <p class="edu-institute"><i class="fas fa-university"></i> Mailam Engineering College</p>
+            <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Tamil Nadu, India</p>
+            <p class="edu-desc">
+              Strong analytical foundation in engineering problem-solving, algorithmic thinking, and computational
+              systems.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certification Card -->
+        <div class="edu-card cert-card">
+          <div class="edu-badge cert-badge"><i class="fas fa-certificate"></i> Certification</div>
+          <div class="edu-content">
+            <span class="edu-year">August 2022 – January 2023</span>
+            <h3>Full Stack Web Developer Certification</h3>
+            <h4>Comprehensive MERN &amp; Web Development Program</h4>
+            <p class="edu-institute"><i class="fas fa-award"></i> Besant Technologies</p>
+            <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Chennai, India</p>
+            <p class="edu-desc">
+              Intensive professional training in modern web architecture, JavaScript (ES6+), React.js, Node.js, Express,
+              databases, and version control.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Me Section -->
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title">
+        <span>Contact Me</span>
+      </div>
+      <p class="section-subtext">Let's connect! Have an upcoming project or looking for a Full-Stack Developer?</p>
+
+      <div class="contact-wrapper">
+        <!-- Contact Information Cards -->
+        <div class="contact-info-cards">
+          <div class="contact-card">
+            <div class="c-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="c-text">
+              <h4>Phone</h4>
+              <p><a href="tel:+919677470849">+91 9677470849</a></p>
+              <small>Available Mon - Sat for calls</small>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="c-icon"><i class="fas fa-envelope"></i></div>
+            <div class="c-text">
+              <h4>Email</h4>
+              <p><a href="mailto:pgarunperumal1999@gmail.com">pgarunperumal1999@gmail.com</a></p>
+              <small>Direct replies within 24 hours</small>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="c-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="c-text">
+              <h4>Location</h4>
+              <p>Villupuram / Chennai</p>
+              <small>Tamil Nadu, India</small>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="c-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div class="c-text">
+              <h4>LinkedIn</h4>
+              <p><a href="https://www.linkedin.com/in/arun-kumar-06104821a" target="_blank"
+                  rel="noopener noreferrer">in/arun-kumar-06104821a</a></p>
+              <small>Professional network &amp; updates</small>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="c-icon"><i class="fab fa-github"></i></div>
+            <div class="c-text">
+              <h4>GitHub</h4>
+              <p><a href="https://github.com/ArunPerumal1999" target="_blank"
+                  rel="noopener noreferrer">ArunPerumal1999</a></p>
+              <small>Open-source &amp; repositories</small>
+            </div>
+          </div>
+
+          <div class="contact-card whatsapp-card">
+            <div class="c-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="c-text">
+              <h4>WhatsApp</h4>
+              <p><a href="https://wa.me/919677470849" target="_blank" rel="noopener noreferrer">+91 9677470849</a></p>
+              <small>Instant chat &amp; messaging</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+          <div class="form-header">
+            <h3>Send Me a Message</h3>
+            <p>Fill out the form below to initiate discussion or project inquiries.</p>
+          </div>
+
+          <form id="portfolioContactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="userName">Your Name <span class="required">*</span></label>
+                <input type="text" id="userName" name="name" placeholder="e.g. John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="userEmail">Your Email <span class="required">*</span></label>
+                <input type="email" id="userEmail" name="email" placeholder="e.g. john@example.com" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="userSubject">Subject <span class="required">*</span></label>
+              <input type="text" id="userSubject" name="subject"
+                placeholder="e.g. Job Opportunity / Full-Stack Project Inquiry" required />
+            </div>
+
+            <div class="form-group">
+              <label for="userMessage">Your Message <span class="required">*</span></label>
+              <textarea id="userMessage" name="message" rows="5"
+                placeholder="Write your project details or message here..." required></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-submit">
+                <i class="fas fa-paper-plane"></i> Send Message via Email
+              </button>
+              <button type="button" class="btn btn-outline" onclick="sendViaWhatsApp()">
+                <i class="fab fa-whatsapp"></i> Send via WhatsApp
+              </button>
+            </div>
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo">
+          &lt;Arun<span>.Dev</span> /&gt;
+        </a>
+        <p>Full-Stack Developer passionate about architecting scalable applications, high-performance backends, and
+          reliable web platforms.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Key Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-connect">
+        <h4>Connect with Arun</h4>
+        <div class="footer-social-icons">
+          <a href="https://www.linkedin.com/in/arun-kumar-06104821a" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/ArunPerumal1999" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:pgarunperumal1999@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://wa.me/919677470849" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="tel:+919677470849" aria-label="Phone">
+            <i class="fas fa-phone-alt"></i>
+          </a>
+        </div>
+        <p class="footer-contact-direct">
+          <i class="fas fa-envelope"></i> pgarunperumal1999@gmail.com<br />
+          <i class="fas fa-phone-alt"></i> +91 9677470849
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>Designed &amp; Developed for <strong>Arun Kumar P</strong> | &#169; 2026 All Rights Reserved</span>
+    </div>
+  </footer>
+
+  <!-- Modal: Interactive Resume Viewer / Downloader -->
+  <div class="modal-overlay" id="resumeModal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title">
+          <i class="fas fa-file-invoice"></i> Arun Kumar P — Resume
+        </div>
+        <div class="modal-actions">
+          <button class="btn btn-sm btn-primary" onclick="printResume()">
+            <i class="fas fa-print"></i> Print / Save as PDF
+          </button>
+          <button class="modal-close" onclick="closeResumeModal()" aria-label="Close Modal">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+      <div class="modal-body" id="resumePrintArea">
+        <!-- Clean Printable Resume Sheet -->
+        <div class="resume-sheet">
+          <div class="r-header">
+            <div class="r-name-block">
+              <h1>ARUN KUMAR P</h1>
+              <h2>Full-Stack Developer</h2>
+            </div>
+            <div class="r-contact-block">
+              <p><i class="fas fa-map-marker-alt"></i> Villupuram, Tamil Nadu, India</p>
+              <p><i class="fas fa-phone"></i> +91 9677470849</p>
+              <p><i class="fas fa-envelope"></i> pgarunperumal1999@gmail.com</p>
+              <p><i class="fab fa-linkedin"></i> linkedin.com/in/arun-kumar-06104821a</p>
+              <p><i class="fab fa-github"></i> github.com/ArunPerumal1999</p>
+            </div>
+          </div>
+
+          <div class="r-section">
+            <h3 class="r-title">Professional Summary</h3>
+            <p>
+              Results-driven Full-Stack Developer with 2+ years of hands-on professional experience architecting,
+              building, and maintaining scalable web applications, custom CMS platforms, and RESTful APIs. Proficient in
+              PHP (Laravel, CodeIgniter 4), modern JavaScript (React.js, Next.js, ES6+), and relational databases
+              (MySQL, PostgreSQL). Proven expertise in integrating secure payment gateways (PhonePe, Razorpay), building
+              dynamic admin dashboards, and implementing responsive UI/UX designs.
+            </p>
+          </div>
+
+          <div class="r-section">
+            <h3 class="r-title">Technical Skills</h3>
+            <ul class="r-skills-list">
+              <li><strong>Frontend:</strong> React.js, Next.js, JavaScript (ES6+), TypeScript, HTML5, CSS3, Bootstrap 5,
+                Tailwind CSS, jQuery</li>
+              <li><strong>Backend &amp; Frameworks:</strong> Laravel (MVC), CodeIgniter 4 (MVC), PHP, Node.js,
+                Express.js, RESTful API Development</li>
+              <li><strong>Databases:</strong> MySQL, PostgreSQL, Redis</li>
+              <li><strong>Integrations &amp; Payment Gateways:</strong> PhonePe Payment Gateway, Razorpay, Google Maps
+                API, Third-Party REST APIs</li>
+              <li><strong>Tools &amp; Deployment:</strong> Git, GitHub, Postman, Vercel, cPanel, Apache, FilePond, AJAX
+              </li>
+            </ul>
+          </div>
+
+          <div class="r-section">
+            <h3 class="r-title">Professional Experience</h3>
+            <div class="r-job">
+              <div class="r-job-head">
+                <span class="r-role"><strong>Full Stack Web Developer</strong> — Gharuda Infotech Pvt Ltd</span>
+                <span class="r-date">Chennai, India | April 2024 – Present</span>
+              </div>
+              <ul class="r-bullets">
+                <li>Architected and maintained scalable full-stack web platforms using CodeIgniter 4 (MVC), Laravel, and
+                  React.js.</li>
+                <li>Developed and consumed secure RESTful APIs enabling seamless, real-time communication between
+                  React.js frontend interfaces and backend services.</li>
+                <li>Integrated enterprise payment solutions including PhonePe and Razorpay for e-commerce checkouts and
+                  subscription workflows.</li>
+                <li>Built dynamic administrative dashboards and CMS modules with role-based access control, AJAX-based
+                  asynchronous form submissions, and FilePond media upload management.</li>
+                <li>Hardened application security by enforcing CSRF token validation, input sanitization, secure session
+                  handling, and SQL injection prevention.</li>
+                <li>Managed end-to-end deployment pipelines on shared and VPS environments via cPanel, including
+                  scheduled database backups and maintenance.</li>
+              </ul>
+            </div>
+
+            <div class="r-job">
+              <div class="r-job-head">
+                <span class="r-role"><strong>Full Stack Developer Intern</strong> — Why Global Services</span>
+                <span class="r-date">Chennai, India | August 2023 – February 2024</span>
+              </div>
+              <ul class="r-bullets">
+                <li>Developed responsive full-stack features using the MERN stack (MongoDB, Express.js, React.js,
+                  Node.js).</li>
+                <li>Collaborated in agile sprint cycles, participating in daily standups, code reviews, and Git version
+                  control workflows.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="r-section">
+            <h3 class="r-title">Key Projects</h3>
+            <div class="r-project">
+              <h4>Innorax CMS — Dynamic Content Management System</h4>
+              <p class="r-stack"><em>Tech Stack: Laravel (MVC), MySQL, Blade / React.js, Bootstrap 5, RESTful APIs</em>
+              </p>
+              <ul class="r-bullets">
+                <li>Engineered a modular Content Management System featuring customizable page layouts, dynamic
+                  navigation builders, and slider banner management.</li>
+                <li>Implemented robust Role-Based Access Control (RBAC) middleware for multi-tier admin and editor user
+                  roles.</li>
+                <li>Designed media library management system with image optimization and secure server-side file
+                  validation.</li>
+                <li>Built optimized Eloquent ORM queries and database indexing, speeding up query response times by 30%.
+                </li>
+              </ul>
+            </div>
+
+            <div class="r-project">
+              <h4>Boolok — Real Estate Listing Platform</h4>
+              <p class="r-stack"><em>Tech Stack: React.js, CodeIgniter 4, RESTful APIs, MySQL, Google Maps API</em></p>
+              <ul class="r-bullets">
+                <li>Built a modern real estate platform featuring dynamic property search, faceted filtering, and agent
+                  inquiry forms.</li>
+                <li>Integrated Google Maps API using latitude/longitude mapping to provide an interactive geospatial
+                  property discovery experience.</li>
+                <li>Decoupled frontend presentation with React.js while servicing data via lightweight CodeIgniter 4
+                  REST endpoints.</li>
+              </ul>
+            </div>
+
+            <div class="r-project">
+              <h4>TTS Brothers — E-Commerce Web Application</h4>
+              <p class="r-stack"><em>Tech Stack: React.js, Node.js, Express.js, RESTful APIs, MySQL, Razorpay
+                  Gateway</em></p>
+              <ul class="r-bullets">
+                <li>Developed an end-to-end e-commerce web platform featuring dynamic product catalog, intuitive cart
+                  management, and real-time order status tracking.</li>
+                <li>Built scalable backend REST APIs using Node.js and Express.js to handle secure checkout and customer
+                  transactions.</li>
+                <li>Implemented Razorpay payment gateway integration with webhook handlers for real-time transaction
+                  verification.</li>
+              </ul>
+            </div>
+
+            <div class="r-project">
+              <h4>Sai GK Matrimony — Matchmaking &amp; Subscription Platform</h4>
+              <p class="r-stack"><em>Tech Stack: CodeIgniter 4, PhonePe Gateway, MySQL, jQuery, AJAX</em></p>
+              <ul class="r-bullets">
+                <li>Delivered user registration, partner profile matching algorithms, and automated subscription tier
+                  management.</li>
+                <li>Integrated PhonePe payment gateway for secure transaction processing and renewal workflows.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="r-section">
+            <h3 class="r-title">Education</h3>
+            <p><strong>Bachelor of Engineering (B.E.) in Electrical &amp; Electronics Engineering (EEE)</strong> —
+              Mailam Engineering College, Tamil Nadu, India (Graduated: April 2022)</p>
+          </div>
+
+          <div class="r-section">
+            <h3 class="r-title">Certifications</h3>
+            <p><strong>Full Stack Web Developer Certification</strong> — Besant Technologies (August 2022 – January
+              2023)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+
+</html>
