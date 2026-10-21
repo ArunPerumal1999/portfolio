@@ -1110,22 +1110,75 @@
   </footer>
 
   <!-- Modal: Interactive Resume Viewer / Downloader -->
+  <!-- Modal: Interactive Resume Viewer & Downloader -->
   <div class="modal-overlay" id="resumeModal">
     <div class="modal-container">
       <div class="modal-header">
         <div class="modal-title">
-          <i class="fas fa-file-invoice"></i> Arun Kumar P — Resume
+          <i class="fas fa-file-pdf"></i>
+          <span>Arun Kumar P — Resume</span>
+          <span class="modal-tag">PDF Preview</span>
         </div>
         <div class="modal-actions">
-          <button class="btn btn-sm btn-primary" onclick="printResume()">
-            <i class="fas fa-print"></i> Print / Save as PDF
-          </button>
+          <a href="Images/Arun_Kumar_Full_Stack_Developer_Resume.pdf" download="Arun_Kumar_Full_Stack_Developer_Resume.pdf"
+            class="btn btn-sm btn-primary modal-action-btn" id="modalDownloadBtn" title="Download Resume PDF">
+            <i class="fas fa-download"></i> <span>Download Resume</span>
+          </a>
+          <a href="Images/Arun_Kumar_Full_Stack_Developer_Resume.pdf" target="_blank" rel="noopener noreferrer"
+            class="btn btn-sm btn-outline modal-action-btn desktop-only" title="Open PDF in new window">
+            <i class="fas fa-external-link-alt"></i> <span>Fullscreen</span>
+          </a>
           <button class="modal-close" onclick="closeResumeModal()" aria-label="Close Modal">
             <i class="fas fa-times"></i>
           </button>
         </div>
       </div>
-      <div class="modal-body" id="resumePrintArea">
+
+      <!-- Tab Switcher: PDF Document vs Web ATS View -->
+      <div class="modal-tab-bar">
+        <button class="modal-tab-btn active" id="tabPdfBtn" onclick="switchResumeTab('pdf')">
+          <i class="fas fa-file-pdf"></i> PDF Document Preview
+        </button>
+        <button class="modal-tab-btn" id="tabWebBtn" onclick="switchResumeTab('web')">
+          <i class="fas fa-file-alt"></i> Web ATS View
+        </button>
+      </div>
+
+      <!-- View 1: PDF Document Preview -->
+      <div class="modal-view-panel active" id="resumePdfView">
+        <div class="pdf-preview-bar">
+          <div class="pdf-file-info">
+            <i class="fas fa-file-pdf"></i>
+            <span><strong>Arun_Kumar_Full_Stack_Developer_Resume.pdf</strong></span>
+          </div>
+          <div class="pdf-bar-actions">
+            <a href="Images/Arun_Kumar_Full_Stack_Developer_Resume.pdf" download="Arun_Kumar_Full_Stack_Developer_Resume.pdf"
+              class="btn btn-sm btn-primary">
+              <i class="fas fa-arrow-circle-down"></i> Download PDF
+            </a>
+            <a href="Images/Arun_Kumar_Full_Stack_Developer_Resume.pdf" target="_blank" rel="noopener noreferrer"
+              class="btn btn-sm btn-ghost desktop-only">
+              <i class="fas fa-external-link-alt"></i> Open Tab
+            </a>
+          </div>
+        </div>
+        <div class="pdf-frame-wrapper">
+          <iframe id="resumePdfFrame"
+            src="Images/Arun_Kumar_Full_Stack_Developer_Resume.pdf#toolbar=1&navpanes=0&scrollbar=1"
+            title="Arun Kumar P Full-Stack Developer Resume"
+            class="resume-pdf-iframe">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- View 2: Web Resume / ATS View -->
+      <div class="modal-view-panel" id="resumeWebView">
+        <div class="web-resume-toolbar">
+          <button class="btn btn-sm btn-outline" onclick="printResume()">
+            <i class="fas fa-print"></i> Print / Save as PDF
+          </button>
+        </div>
+        <div class="modal-body" id="resumePrintArea">
         <!-- Clean Printable Resume Sheet -->
         <div class="resume-sheet">
           <div class="r-header">
@@ -1276,6 +1329,7 @@
       </div>
     </div>
   </div>
+</div>
 
   <!-- Main JavaScript File -->
   <script src="script.js"></script>

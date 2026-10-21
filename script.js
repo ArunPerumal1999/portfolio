@@ -263,12 +263,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Resume Modal Open/Close/Print Functions
+// Resume Modal Open/Close/Print/Tab Switch Functions
 function openResumeModal() {
   const modal = document.getElementById("resumeModal");
   if (modal) {
     modal.classList.add("open");
     document.body.style.overflow = "hidden";
+    // Default to PDF preview tab
+    switchResumeTab("pdf");
   }
 }
 
@@ -277,6 +279,25 @@ function closeResumeModal() {
   if (modal) {
     modal.classList.remove("open");
     document.body.style.overflow = "auto";
+  }
+}
+
+function switchResumeTab(tabName) {
+  const pdfView = document.getElementById("resumePdfView");
+  const webView = document.getElementById("resumeWebView");
+  const tabPdfBtn = document.getElementById("tabPdfBtn");
+  const tabWebBtn = document.getElementById("tabWebBtn");
+
+  if (tabName === "pdf") {
+    if (pdfView) pdfView.classList.add("active");
+    if (webView) webView.classList.remove("active");
+    if (tabPdfBtn) tabPdfBtn.classList.add("active");
+    if (tabWebBtn) tabWebBtn.classList.remove("active");
+  } else {
+    if (pdfView) pdfView.classList.remove("active");
+    if (webView) webView.classList.add("active");
+    if (tabPdfBtn) tabPdfBtn.classList.remove("active");
+    if (tabWebBtn) tabWebBtn.classList.add("active");
   }
 }
 
